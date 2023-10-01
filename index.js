@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const utils = require('./utils/generateMarkDown.js');
+const utils = require('./assets/utils/generateMarkDown.js');
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
@@ -10,24 +10,38 @@ const questions = [
     message: 'What would you like your Project Title to be?'
   },
   {
-    name: 'description',
-    message: 'What would you like your description to say in the README.md file?'
+    name: 'description1',
+    message: 'What was your motivation?'
   },
   {
-    name: 'tableOfContents',
-    message: 'What would you like you Table of Contents to look say??'
+    name: 'description2',
+    message: 'Why did you build this project?'
+  },
+  {
+    name: 'description3',
+    message: 'What problem does it solve?'
+  },
+  {
+    name: 'description4',
+    message: 'What did you learn?'
   },
   {
     name: 'insallation',
-    message: 'What would you like you like your Instructions to look say??'
+    message: 'What would you like you like your Instructions to look say?'
   },
   {
     name: 'usage',
-    message: 'What would you like to include in your usage section?'
+    message: 'What are the steps required to install your project?'
   },
   {
     name: 'license',
     message: 'What is the license information for your project?'
+  },
+  {
+    name: 'badge',
+    message: 'Please choose the license from the list provided?',
+    type: 'list',
+    choices: ['MIT', 'ISC', 'GNU']
   },
   {
     name: 'contributing',
@@ -44,16 +58,15 @@ const questions = [
   }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  
+}
 
 // TODO: Create a function to initialize app
 function init () {
-  promptUser();
+  inquirer.prompt(questions).then(utils.generateMarkDown);
 }
 
 // Function call to initialize app
 init();
 
-function promptUser() {
-  inquirer.prompt(questions).then(utils.generateMarkDown);
-};
