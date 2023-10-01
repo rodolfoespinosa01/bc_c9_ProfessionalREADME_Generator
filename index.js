@@ -1,8 +1,9 @@
-
 const inquirer = require('inquirer');
-const generateMarkDown = require('./utils/generateMarkDown.js');
+const utils = require('./utils/generateMarkDown.js');
+// TODO: Include packages needed for this application
 
-inquirer.prompt([
+// TODO: Create an array of questions for user input
+const questions = [
   {
     // type: 'input',
     name: 'title',
@@ -40,6 +41,19 @@ inquirer.prompt([
     type: 'confirm',
     name: 'darkMode',
     message: 'Would you like dark mode??'
-  }
-]).then(generateMarkDown);
+  }];
 
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
+
+// TODO: Create a function to initialize app
+function init () {
+  promptUser();
+}
+
+// Function call to initialize app
+init();
+
+function promptUser() {
+  inquirer.prompt(questions).then(utils.generateMarkDown);
+};
