@@ -45,3 +45,19 @@ No one at the moment.
 
 ## Tests
 Rodolfo Espinosa Nunez
+
+## Questions for me?
+Shoot me an email to rodolfoespinosa01@gmail.com
+
+## Github Profile
+Visit my Github profile!
+https://github.com/rodolfoespinosa01
+
+## Project Repo
+https://github.com/rodolfoespinosa01/bc_c9_ProfessionalREADME_Generator
+
+## Deployed Website
+https://rodolfoespinosa01.github.io/bc_c9_ProfessionalREADME_Generator/
+
+## Video walkthrough
+https://www.loom.com/share/1f622da577cf4223bbe98ea20ad6515e
